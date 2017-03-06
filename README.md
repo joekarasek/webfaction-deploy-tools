@@ -1,40 +1,50 @@
-#Deployment Scripts for Webfaction
+Webfaction Deployment
+By Joseph Karasek for Hello World Devs
 
-## Description
-This Python toolkit is designed to help you with setting up a website through Webfaction. Specifically, these script allows you to create a siteConfig.py file with basic configuration settings, and then use straight-forward command-line prompts to set-up a site on Webfaction.
+Description
 
-These scripts were developed to address a specific use by Hello World Devs and is in an alpha state.
+This deployment script is meant to be used with WebFaction and was built as a development tool for the Tyson Steele projects. This script handles two tasks: 1) setting up the initial configuration on Webfaction for a static site (including the webapp, domain, and website) and 2) pulling the latest version of a site if the website already exists.
 
-## Dependencies
+This is the first python application I have ever written. Please feel free to give me feedback.
 
-- Python 3
+Prerequisites
 
-## Getting Started
+You will need the following things properly installed on your computer.
 
-Copy the `/example.siteConfig.py` file and rename it `/siteConfig.py`.
+Python 2.7
+Installation
 
-Edit `/siteConfig.py` so it has the right Webfaction user-name and password, and the desired name of your website.
+It is highly suggested (but not required) that you place the script in the root directory of the project you are working on.
+Open the example.siteConfig.py file. Follow the instruction to create a siteConfig.py file
+Note: This file will need to be in the same directory as the deploy.py script
+It's suggested you add the following entries to you .gitignore file
+siteConfig.py
+*.pyc
+How to use
 
-Run `./deploy.py` and follow the command prompts.
+Simply run... python deploy.py. This command will both initialize a project and pull in the latest version.
 
-## License
+Features to add
 
-Copyright (c) 2017 Joseph Karasek
+Setup of DNS through Name Cheap
+Better UI feedback, including prompts
+Known Bugs
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+No known bugs at this time.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Resources
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+WebFaction API Docs
+Support and contact details
+
+If you have any questions, concerns, or feedback, please contact the authors through gitHub.
+
+Technologies Used
+
+Python
+WebFaction API
+License
+
+MIT License.
+
+Copyright (c) 2016 Joseph Karasek
