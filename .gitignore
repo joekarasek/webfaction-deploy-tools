@@ -1,0 +1,9 @@
+# System files in case they are not globally ignored
+.DS_Store
+.idea
+
+# Security and Deployment Configuration
+siteConfig.py
+
+# Misc.
+*.pyc
